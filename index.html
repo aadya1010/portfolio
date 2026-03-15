@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Aadya Singh</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Aadya Singh</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon"onclick="togglemenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="togglemenu()">About</a></li>
+                <li><a href="#skills" onclick="togglemenu()">Skills</a></li>
+                <li><a href="#projects" onclick="togglemenu()">Projects</a></li>
+                <li><a href="#contact" onclick="togglemenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile.jpeg" alt="profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I am</p>
+                <h1 class="title">Aadya Singh</h1>
+                    <p class="section__text__p2">Frontend developer</p>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2" onclick="window.open('./assets/Aadya-Singh-Resume.pdf')">Download CV</button>
+                            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+                        </div>
+                    <div id="socials-container">
+                        <img 
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                        alt="LinkedIn profile"
+                        class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/aadya-dhakrey-916597321/'"
+                        />
+                        
+                        <img 
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                        alt="GitHub profile"
+                        class="icon"
+                        onclick="location.href='https://github.com/aadya1010'"
+                        />
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <p class="section-text-p1">Get To Know More</p>
+                    <h1 class="title">ABOUT ME</h1>
+
+                    <div class="about-container">
+
+                    <div class="details-container">
+                        <img 
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                        class="icon"
+                        alt="experience icon"
+                        />
+                        <h2 class="experience-subtitle">EXPERIENCE</h2>
+                            <p>2 Years <br> Frontend Development</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img 
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                        class="icon"
+                        alt="education icon"
+                        />
+                        <h2 class="experience-subtitle">EDUCATION</h2>
+                            <p>Bachelor's Degree in Computer Science<br>Specialized in Data Science</p>
+                    </div>
+
+                </div>
+
+                <div class="about-text">
+                    <p>
+      Passionate computer science student with an interest in building modern,
+      responsive web applications. I enjoy solving problems, learning new
+      technologies and creating user-friendly digital experiences.
+                    </p>
+                </div>
+</section>
+    <section id="skills">
+        <p class="section-text-p1">Explore</p>
+        <h1 class="title">SKILLS</h1>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">FRONTEND DEVELOPMENT</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="icon">
+
+                            <div>
+                                <h3>NodeJS</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="icon">
+                            <div>
+                                <h3>React</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">BACKEND & DATABASE</h2>
+                    <div class="artile-container">
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="icon">
+                            <div>
+                                <h3>MongoDB</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" class="icon">
+                            <div>
+                                <h3>JAVA</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="experience icon" class="icon"/>
+                            <div>
+                                <h3>Git</h3>
+                                <P>Intermediate</P>
+                            </div>
+                        </article>
+                    
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">SOFT SKILLS</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg" class="icon">
+                                <div>
+                                    <h3>Communication</h3>
+                                    <p>Strong</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" class="icon">
+                                <div>
+                                    <h3>Teamwork</h3>
+                                    <p>Collaborative</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="icon">
+                                <div>
+                                    <h3>Problem Solving</h3>
+                                    <p>Analytical</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="icon">
+                                <div>
+                                    <h3>Adaptability</h3>
+                                    <p>Fast Learner</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg" class="icon">
+                                <div>
+                                    <h3>Time Management</h3>
+                                    <p>Organized</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <p class="section-text-p1">Browse My Recent</p>
+                <h1 class="title">PROJECTS</h1>
+                <div class="about-container">
+                    <div class="details-container">
+                        <h2 class="experience-subtitle">Portfolio Website</h2>
+                            <p>A responsive personal portfolio built using HTML, CSS and JavaScript.  Features animated background, interactive cards and smooth navigation.</p>
+                                </div>
+
+                                <div class="details-container">
+                                    <h2 class="experience-subtitle">Weather App</h2>
+                                        <p>A weather application that fetches real-time weather data from an API and displays temperature, humidity and conditions.</p>
+                                </div>
+
+                                <div class="details-container">
+                                    <h2 class="experience-subtitle">Task Manager</h2>
+                                        <p>A simple task management system allowing users to add, remove and track tasks.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section id="contact">
+                            <p class="section-text-p1">Get In Touch</p>
+                                <h1 class="title">CONTACT</h1>
+
+                                    <div class="about-container">
+
+                                        <div class="details-container">
+                                            <h2 class="experience-subtitle">Email</h2>
+                                                <p>aadya@email.com</p>
+                                        </div>
+
+                                        <div class="details-container">
+                                            <h2 class="experience-subtitle">LinkedIn</h2>
+                                                <p>linkedin.com/in/aadya-dhakrey</p>
+                                        </div>
+
+                                        <div class="details-container">
+                                            <h2 class="experience-subtitle">GitHub</h2>
+                                                <p>github.com/yourusername</p>
+                                        </div>
+
+                                    </div>
+                                </section>
+        <script src="script.js"></script>
+    </body>
+    </html>
